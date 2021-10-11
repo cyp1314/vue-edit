@@ -1,9 +1,8 @@
 <template>
 	<div id="app">
-		<img alt="Vue logo" src="./assets/logo.png">
 		<ckeditor v-model='content'></ckeditor>
 
-		<button @click="getContent">获取内容</button>
+		<button hidden="hidden" @click="getContent">获取内容</button>
 		<div id="content" v-html="content"></div>
 	</div>
 </template>
@@ -25,5 +24,14 @@
 </script>
 
 <style>
-
+	*{
+		margin: 0;
+		padding: 0;
+	}
+#content{
+	width: 80%;
+	height: 400px;
+	border: 1px dotted green;
+	margin: 20px auto;
+}
 </style>
