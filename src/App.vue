@@ -33,5 +33,6 @@
 	height: 400px;
 	border: 1px dotted green;
 	margin: 20px auto;
+	overflow: hidden;
 }
 </style>
